@@ -1,0 +1,16 @@
+{
+    "name": "IMDB rating streaming injector",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "Adds the IMDb rating to titles on Netflix",
+    "content_scripts": [
+        {
+            "matches": ["https://www.netflix.com/*"],
+            "css": ["styles.css"],
+            "js": ["api.js", "content.js"]
+        }
+    ],
+    "host_permissions": [
+    "https://api.imdbapi.dev/*"
+  ]
+}

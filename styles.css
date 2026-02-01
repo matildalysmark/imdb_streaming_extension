@@ -1,0 +1,29 @@
+.imdb-rating-display {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 6px 10px;
+    background-color: #f5c518;
+    color: #000000;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    cursor: default;
+    line-height: 1;
+}
+
+.imdb-rating-display::before {
+    content: 'IMDb';
+    margin-right: 6px;
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.imdb-rating-value {
+    display: flex;
+    align-items: center;
+}
