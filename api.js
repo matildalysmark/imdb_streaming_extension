@@ -21,7 +21,7 @@ async function getRating(movieTitle, limit=1) {
         const data = await response.json();
         const rating = data.titles?.[0]?.rating?.aggregateRating ?? fallback;
 
-        return rating;
+        return rating.toFixed(1);
 
     } catch (e) {
         console.error("API error:", e);
